@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="org.gnome.shell.extensions.pomodoro.Phase">
+    <value nick="work" value="0"/>
+    <value nick="short-break" value="1"/>
+    <value nick="long-break" value="2"/>
+  </enum>
+  <enum id="org.gnome.shell.extensions.pomodoro.State">
+    <value nick="stopped" value="0"/>
+    <value nick="running" value="1"/>
+    <value nick="paused" value="2"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.pomodoro" path="/org/gnome/shell/extensions/pomodoro/">
+    <!-- Timer state, shared between the top bar extension and the app -->
+    <key name="phase" enum="org.gnome.shell.extensions.pomodoro.Phase">
+      <default>'work'</default>
+    </key>
+    <key name="state" enum="org.gnome.shell.extensions.pomodoro.State">
+      <default>'stopped'</default>
+    </key>
+    <key name="end-time" type="d">
+      <default>0</default>
+      <summary>Wall-clock time (seconds since epoch) the running phase ends</summary>
+    </key>
+    <key name="remaining" type="d">
+      <default>0</default>
+      <summary>Seconds left in the phase while paused</summary>
+    </key>
+    <key name="completed" type="i">
+      <default>0</default>
+      <summary>Focus sessions completed in the current cycle</summary>
+    </key>
+    <key name="today-count" type="i">
+      <default>0</default>
+    </key>
+    <key name="today-date" type="s">
+      <default>''</default>
+    </key>
+
+    <!-- Preferences -->
+    <key name="work-duration" type="i">
+      <range min="1" max="180"/>
+      <default>25</default>
+      <summary>Focus length in minutes</summary>
+    </key>
+    <key name="short-break-duration" type="i">
+      <range min="1" max="60"/>
+      <default>5</default>
+    </key>
+    <key name="long-break-duration" type="i">
+      <range min="1" max="120"/>
+      <default>15</default>
+    </key>
+    <key name="long-break-interval" type="i">
+      <range min="2" max="12"/>
+      <default>4</default>
+      <summary>Focus sessions before a long break</summary>
+    </key>
+    <key name="auto-start-breaks" type="b">
+      <default>true</default>
+    </key>
+    <key name="auto-start-work" type="b">
+      <default>false</default>
+    </key>
+    <key name="play-sound" type="b">
+      <default>true</default>
+    </key>
+    <key name="show-time-in-panel" type="b">
+      <default>true</default>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,10 @@
+{
+  "uuid": "pomodoro@joran.dev",
+  "name": "Pomodoro",
+  "description": "Pomodoro timer in the top bar. Middle-click the indicator to start or pause.",
+  "shell-version": ["49"],
+  "session-modes": ["user", "unlock-dialog"],
+  "settings-schema": "org.gnome.shell.extensions.pomodoro",
+  "url": "https://github.com/JoranQuack/pomodoro",
+  "version": 1
+}

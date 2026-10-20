@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f66151"/>
+      <stop offset="1" stop-color="#e01b24"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c01c28"/>
+      <stop offset="1" stop-color="#a51d2d"/>
+    </linearGradient>
+  </defs>
+  <!-- base / depth -->
+  <ellipse cx="64" cy="76" rx="52" ry="44" fill="url(#side)"/>
+  <!-- face -->
+  <ellipse cx="64" cy="70" rx="52" ry="44" fill="url(#body)"/>
+  <!-- highlight -->
+  <ellipse cx="40" cy="52" rx="14" ry="8" fill="#ffffff" opacity="0.25" transform="rotate(-30 40 52)"/>
+  <!-- clock dial -->
+  <circle cx="64" cy="74" r="26" fill="#ffffff" opacity="0.92"/>
+  <path d="M64 74 L64 54 A20 20 0 0 1 81.3 64 Z" fill="#e01b24" opacity="0.85"/>
+  <circle cx="64" cy="74" r="3" fill="#a51d2d"/>
+  <!-- leaves -->
+  <path d="M64 30 C56 22 44 22 38 28 C48 28 54 32 58 36 C50 38 44 44 44 50 C52 44 58 42 64 40 C70 42 76 44 84 50 C84 44 78 38 70 36 C74 32 80 28 90 28 C84 22 72 22 64 30 Z" fill="#26a269"/>
+  <path d="M62 30 C62 22 64 14 70 10 L73 13 C68 17 67 23 67 30 Z" fill="#2ec27e"/>
+</svg>

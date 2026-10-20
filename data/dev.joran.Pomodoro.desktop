@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Pomodoro
+Comment=Focus in short sessions with breaks in between
+Exec=pomodoro
+Icon=dev.joran.Pomodoro
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;Clock;
+Keywords=timer;focus;tomato;break;productivity;
+StartupNotify=true
+DBusActivatable=false
+Actions=start-focus;start-break;
+
+[Desktop Action start-focus]
+Name=Start Focus
+Exec=pomodoro --start work
+
+[Desktop Action start-break]
+Name=Start Break
+Exec=pomodoro --start short-break

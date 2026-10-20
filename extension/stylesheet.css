@@ -1,0 +1,91 @@
+.pomodoro-panel-box {
+  spacing: 6px;
+}
+
+.pomodoro-panel-ring {
+  width: 16px;
+  height: 16px;
+}
+
+.pomodoro-panel-label {
+  font-feature-settings: "tnum";
+}
+
+.pomodoro-menu {
+  min-width: 18em;
+}
+
+.pomodoro-header {
+  padding: 6px 12px 12px 12px;
+}
+
+.pomodoro-header:hover,
+.pomodoro-header:focus {
+  background-color: transparent;
+}
+
+.pomodoro-phase-label {
+  font-weight: bold;
+}
+
+.pomodoro-dots {
+  spacing: 5px;
+}
+
+.pomodoro-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  background-color: st-transparentize(-st-accent-color, 0.75);
+}
+
+.pomodoro-dot.filled {
+  background-color: -st-accent-color;
+}
+
+.pomodoro-time-label {
+  font-size: 32pt;
+  font-weight: 300;
+  font-feature-settings: "tnum";
+  padding-top: 8px;
+}
+
+.pomodoro-status-label {
+  font-size: 9pt;
+  padding-bottom: 12px;
+}
+
+.pomodoro-controls {
+  spacing: 18px;
+}
+
+.pomodoro-button {
+  padding: 12px;
+  border-radius: 99px;
+}
+
+.pomodoro-button StIcon {
+  icon-size: 16px;
+}
+
+.pomodoro-play-button {
+  padding: 16px;
+  background-color: -st-accent-color;
+  color: -st-accent-fg-color;
+}
+
+.pomodoro-play-button:hover {
+  background-color: st-lighten(-st-accent-color, 8%);
+}
+
+.pomodoro-play-button:active {
+  background-color: st-darken(-st-accent-color, 8%);
+}
+
+.pomodoro-play-button StIcon {
+  icon-size: 20px;
+}
+
+.pomodoro-duration-label {
+  font-feature-settings: "tnum";
+}
